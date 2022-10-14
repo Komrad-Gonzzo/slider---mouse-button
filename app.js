@@ -18,6 +18,15 @@ downBtn.addEventListener('click', () => {
 
 })
 
+document.addEventListener('keydown',
+event => {
+    if(event.key === 'ArrowUp'){
+        cangeSlide('up')
+    } else if(event.key === 'ArrowDown'){
+        cangeSlide('down')
+}
+})
+
 function cangeSlide(direction) {
     if(direction === 'up') {
         activeSlideIndex ++
